@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -5545495097085571444}
   - component: {fileID: 8269529820121737559}
   - component: {fileID: 3737139771598866263}
+  - component: {fileID: 8051179534543750252}
   m_Layer: 6
   m_Name: Ring
   m_TagString: Untagged
@@ -199,6 +200,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 1fe07ed2c1f8f8449a5a68dd31f5e16a, type: 2}
+        m_TargetAssemblyTypeName: ColorIDDataList, Assembly-CSharp
+        m_MethodName: SetCurrentColorRandomly
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   runEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -223,7 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13107e1ff74f7db49acbdc90df98ea4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idobj: {fileID: 0}
+  idobj: {fileID: 11400000, guid: f4523ef06108e54418632a64615d3e74, type: 2}
   startEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -240,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b07cfffa644f7845b3d197a907039eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idobj: {fileID: 0}
+  idobj: {fileID: 11400000, guid: fc236840d7a726f448923f33a6288866, type: 2}
   matchEvent:
     m_PersistentCalls:
       m_Calls:
@@ -249,7 +262,7 @@ MonoBehaviour:
         m_MethodName: ChangeColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 7715295269306646379, guid: 2dc4f35ada16b1642b4359987f0a564b, type: 3}
+          m_ObjectArgument: {fileID: 7014537502149654938}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -263,6 +276,34 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   colorIDDataListobj: {fileID: 11400000, guid: 1fe07ed2c1f8f8449a5a68dd31f5e16a, type: 2}
+--- !u!114 &8051179534543750252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2626022612945035675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30766d04814596f4f8506a1c7042f8f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: 31c5748b17fe61049b75fbb5a77d6d0a, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1662354537024428291}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &741572875966678769
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -363,8 +404,17 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0.0627451
       objectReference: {fileID: 0}
+    - target: {fileID: 7715295269306646379, guid: 2dc4f35ada16b1642b4359987f0a564b, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715295269306646379, guid: 2dc4f35ada16b1642b4359987f0a564b, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -2720344342396414531, guid: 2dc4f35ada16b1642b4359987f0a564b, type: 3}
+    - {fileID: -3878870874716860954, guid: 2dc4f35ada16b1642b4359987f0a564b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -383,5 +433,10 @@ MonoBehaviour:
 --- !u!4 &3487754464038348732 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4191838253970022733, guid: 2dc4f35ada16b1642b4359987f0a564b, type: 3}
+  m_PrefabInstance: {fileID: 741572875966678769}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &7014537502149654938 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7715295269306646379, guid: 2dc4f35ada16b1642b4359987f0a564b, type: 3}
   m_PrefabInstance: {fileID: 741572875966678769}
   m_PrefabAsset: {fileID: 0}

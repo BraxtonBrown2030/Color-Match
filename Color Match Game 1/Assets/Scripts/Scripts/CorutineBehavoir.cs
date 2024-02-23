@@ -9,7 +9,7 @@ public class CorutineBehavoir : MonoBehaviour
 {
     public UnityEvent startevent, startCountevent, repeatCountevent, endCountevent, reapeatUntelfalseEvnet;
 
-    public bool canrun;
+    public bool Canrun;
     public IntData counterNum;
     
     public float seconds = 3.0f;
@@ -46,7 +46,7 @@ public class CorutineBehavoir : MonoBehaviour
 
     public void StartRepeateUntelFalse()
     {
-        canrun = true;
+        Canrun = true;
         StartCoroutine(RepeateUntelFalse());
     }
     
@@ -54,7 +54,7 @@ public class CorutineBehavoir : MonoBehaviour
     private IEnumerator RepeateUntelFalse()
     {
 
-        while (canrun)
+        while (Canrun)
         {
 
             yield return wfsOBJ;
@@ -64,5 +64,4 @@ public class CorutineBehavoir : MonoBehaviour
         
         
     }
-    
 }
